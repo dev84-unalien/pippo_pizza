@@ -1,7 +1,11 @@
 #unos {
+    display: flex;
     height: 100vh;
     width: 100vw;
-    background-image: url(https://www.pizzashow49.fr/wp-content/uploads/2014/07/pizza-show-1.jpg);
+    background-image: url("images/ajoutpizza.jpg");
+    justify-content:contain;
+    align-items: center;
+    margin-bottom: 20vh;
 }
 
 #formulaire {
