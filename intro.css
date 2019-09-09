@@ -1,0 +1,134 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #ffffff;
+    color: #000000;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+}
+
+div {
+    border: 1px solid red;
+}
+
+#mainbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    box-sizing: border-box;
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+}
+
+#pippo {
+    width: 50%;
+    height: 80%;
+    background-image: url('images/pippo_partial.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#head {
+    width: 100%;
+    height: 100%;
+    background-image: url('images/tete.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#plates {
+    width: 100%;
+    height: 100%;
+    background-image: url('images/plats.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.headmove {
+    animation-name: headmove;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+}
+
+.platemove {
+    animation-name: platemove;
+    animation-duration: 300ms;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+}
+
+.swing {
+    transform-origin: top center;
+    animation-name: swing;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+
+@keyframes headmove {
+    0%   {transform: rotate(0deg);}
+    25%  {transform: rotate(8deg);}
+    50%  {transform: rotate(0deg);}
+    75%  {transform: rotate(-8deg);}
+    100% {transform: rotate(0deg);}
+
+}
+
+@keyframes platemove {
+    0%   {transform: rotate(0deg);}
+    50%  {transform: rotate(2deg);}
+    100% {transform: rotate(0deg);}
+}
+
+    @-webkit-keyframes swing {
+    20% {
+    -webkit-transform: rotate3d(0, 0, 1, 15deg);
+    transform: rotate3d(0, 0, 1, 15deg);
+    }
+    40% {
+    -webkit-transform: rotate3d(0, 0, 1, -10deg);
+    transform: rotate3d(0, 0, 1, -10deg);
+    }
+    60% {
+    -webkit-transform: rotate3d(0, 0, 1, 5deg);
+    transform: rotate3d(0, 0, 1, 5deg);
+    }
+    80% {
+    -webkit-transform: rotate3d(0, 0, 1, -5deg);
+    transform: rotate3d(0, 0, 1, -5deg);
+    }
+    100% {
+    -webkit-transform: rotate3d(0, 0, 1, 0deg);
+    transform: rotate3d(0, 0, 1, 0deg);
+    }
+    }
+    @keyframes swing {
+    20% {
+    -webkit-transform: rotate3d(0, 0, 1, 15deg);
+    transform: rotate3d(0, 0, 1, 15deg);
+    }
+    40% {
+    -webkit-transform: rotate3d(0, 0, 1, -10deg);
+    transform: rotate3d(0, 0, 1, -10deg);
+    }
+    60% {
+    -webkit-transform: rotate3d(0, 0, 1, 5deg);
+    transform: rotate3d(0, 0, 1, 5deg);
+    }
+    80% {
+    -webkit-transform: rotate3d(0, 0, 1, -5deg);
+    transform: rotate3d(0, 0, 1, -5deg);
+    }
+    100% {
+    -webkit-transform: rotate3d(0, 0, 1, 0deg);
+    transform: rotate3d(0, 0, 1, 0deg);
+    }
+    }
