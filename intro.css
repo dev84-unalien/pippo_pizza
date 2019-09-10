@@ -5,18 +5,18 @@ html, body {
     width: 100%;
     background-color: #ffffff;
     color: #000000;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'beautifulRosesRegular';
     font-size: 16px;
 }
 
-div {
+div, span {
     border: 1px solid red;
 }
 
 @font-face {
-    font-family: myFirstFont;
-    src: url(sansation_light.woff);
-  }
+    font-family: beautifulRosesRegular;
+    src: url(font/beautiful_roses/Beautiful\ Roses\ Regular.ttf);
+}
 
 #mainbox {
     position: relative;
@@ -58,11 +58,14 @@ div {
     position: absolute;
     top: 10%;
     left: 5%;
-    width: 15%;
+    width: 20%;
     height: 25%;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: row;
+    box-sizing: border-box;
+    overflow: hidden;
     text-align: center;
     border-radius: 2rem;
     background-color: #eccb78;
@@ -72,26 +75,97 @@ div {
     position: absolute;
     top: 10%;
     left: 80%;
-    width: 15%;
-    height: 25%;
+    width: 16%;
+    height: 15%;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
+    flex-direction: row;
+    box-sizing: border-box;
+    overflow: hidden;
+    text-align: center;
+    border-radius: 2rem;
+    background-color: #eccb78;
+}
+
+#punchline_03 {
+    position: absolute;
+    top: 40%;
+    left: 80%;
+    width: 16%;
+    height: 15%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+    box-sizing: border-box;
+    overflow: hidden;
+    text-align: center;
+    border-radius: 2rem;
+    background-color: #eccb78;
+}
+
+#punchline_04 {
+    position: absolute;
+    top: 70%;
+    left: 80%;
+    width: 16%;
+    height: 15%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+    box-sizing: border-box;
+    overflow: hidden;
     text-align: center;
     border-radius: 2rem;
     background-color: #eccb78;
 }
 
 #slogan_01 {
+    width: 80%;
+    color: #DB4213;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+#slogan_02 {
+    width: 50%;
     color: #DB4213;
     font-size: 2rem;
     font-weight: bold;
 }
 
-#slogan_02 {
+#slogan_03 {
+    width: 60%;
     color: #DB4213;
     font-size: 2rem;
     font-weight: bold;
+}
+
+#slogan_04 {
+    width: 60%;
+    color: #DB4213;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+#legend_02 {
+    width: 40%;
+    color: #DB4213;
+    font-size: 1.4rem;
+}
+
+#legend_03 {
+    width: 30%;
+    color: #DB4213;
+    font-size: 1.4rem;
+}
+
+#legend_04 {
+    width: 30%;
+    color: #DB4213;
+    font-size: 1.4rem;
 }
 
 .headmove {
