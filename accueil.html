@@ -14,12 +14,14 @@
 
 <body>
     <div id=unos>
+
         <div id=commande>
 
-            <h2>Tabs</h2>
-            <p>Click on the buttons inside the tabbed menu:</p>
+            <div id=titre>
+                <h3 id="teti">PIZZERIA PIPPO</h3>
+            </div>
 
-            <div class="tab">
+            <div id="haha" class="tab">
                 <button class="tablinks" onclick="openCity(event, 'livraison')">livraison</button>
                 <button class="tablinks" onclick="openCity(event, 'emporter')">a emporter</button>
                 <button class="tablinks" onclick="openCity(event, 'contact')">contact</button>
@@ -29,17 +31,17 @@
                 <h3>livraison</h3>
 
                 <form action="/action_page.php">
-                    <p>code postale:</p>
+                    <p>code postal:</p>
                     <input name="codepostale" type="text">
                     <p>rue:</p>
                     <input name="rue" type="text">
                     <p>numero de rue</p>
                     <input name="numeroderue" type="text">
                     <p>choix de livraison</p>
-                    <input type="radio" name="nom_variable" value="rapide"> rapide
+                    <input type="checkbox" name="nom_variable" value="rapide"> rapide
                     <input type="checkbox" name="nom_variable" value="lent"> lent
                     <br><br>
-                    <input type="submit">
+                    <input type="submit"> commander
             </div>
 
             <div id="emporter" class="tabcontent">
@@ -60,7 +62,7 @@
                 <h3>contact</h3>
                 <p>45 avenue des Frères Lumière 69008 Lyon</p>
                 <p>
-                    04 78 00 81 65</p>
+                    04 78 00 45 65</p>
             </div>
 
 
