@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>pizzaria pippo</title>
+    <link rel="stylesheet" href="admin.css">
+    <script src="jquery-3.4.1.min.js"></script>
+    <script src="admin.js"></script>
+
+</head>
+
+<body>
+    <div id=unos>
+        <div id=commande>
+
+            <h2>Tabs</h2>
+            <p>Click on the buttons inside the tabbed menu:</p>
+
+            <div class="tab">
+                <button class="tablinks" onclick="openCity(event, 'livraison')">livraison</button>
+                <button class="tablinks" onclick="openCity(event, 'emporter')">a emporter</button>
+                <button class="tablinks" onclick="openCity(event, 'contact')">contact</button>
+            </div>
+
+            <div id="livraison" class="tabcontent">
+                <h3>livraison</h3>
+
+                <form action="/action_page.php">
+                    <p>code postale:</p>
+                    <input name="codepostale" type="text">
+                    <p>rue:</p>
+                    <input name="rue" type="text">
+                    <p>numero de rue</p>
+                    <input name="numeroderue" type="text">
+                    <p>choix de livraison</p>
+                    <input type="radio" name="nom_variable" value="rapide"> rapide
+                    <input type="checkbox" name="nom_variable" value="lent"> lent
+                    <br><br>
+                    <input type="submit">
+            </div>
+
+            <div id="emporter" class="tabcontent">
+                <h3>emporter</h3>
+                <form action="/action_page.php">
+                    <p>nom:</p>
+                    <input name="codepostale" type="text">
+                    <p>prenom:</p>
+                    <input name="rue" type="text">
+                    <p>numero de telephone:</p>
+                    <input name="numeroderue" type="text">
+
+                    <br><br>
+                    <input type="submit">
+            </div>
+
+            <div id="contact" class="tabcontent">
+                <h3>contact</h3>
+                <p>45 avenue des Frères Lumière 69008 Lyon</p>
+                <p>
+                    04 78 00 81 65</p>
+            </div>
+
+
+
+
+            </form>
+
+        </div>
+
+    </div>
+</body>
+
+</html>s

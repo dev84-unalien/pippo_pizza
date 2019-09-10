@@ -5,17 +5,8 @@
   justify-content: cover;
   background-size: 100vw;
 }
-#body{
-    width: 100vw;
-    height: 80vh;
-    display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-content: center;
-}
 #Gcadre {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-content: center;
   width: 80vw;

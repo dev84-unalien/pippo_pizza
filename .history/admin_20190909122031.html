@@ -17,7 +17,7 @@
         <div id=commande>
 
             <h2>Tabs</h2>
-           
+            <p>Click on the buttons inside the tabbed menu:</p>
 
             <div class="tab">
                 <button class="tablinks" onclick="openCity(event, 'livraison')">livraison</button>
@@ -27,6 +27,19 @@
 
             <div id="livraison" class="tabcontent">
                 <h3>livraison</h3>
+
+                <form action="/action_page.php">
+                    <p>code postale:</p>
+                    <input name="codepostale" type="text">
+                    <p>rue:</p>
+                    <input name="rue" type="text">
+                    <p>numero de rue</p>
+                    <input name="numeroderue" type="text">
+                    <p>choix de livraison</p>
+                    <input type="radio" name="nom_variable" value="rapide"> rapide
+                    <input type="checkbox" name="nom_variable" value="lent"> lent
+                    <br><br>
+                    <input type="submit">
             </div>
 
             <div id="emporter" class="tabcontent">
@@ -35,27 +48,19 @@
             </div>
 
             <div id="contact" class="tabcontent">
+                <h3>contact</h3>
+                <p>45 avenue des Frères Lumière 69008 Lyon</p>
+                <p>
+                    04 78 00 81 65</p>
             </div>
+
+
+
+
             </form>
 
-         <div id="body">
-            <div id="Gcadre">
-                <div id="Nom">Nom de la pizza:</div>
-                  <div id="Taille">
-                  <p>Selectionner la taille de la pizza :</p>
-                   <select >
-                         <option value="S">S</option>
-                         <option value="M">M</option>
-                         <option value=">L">L</option>
-                         <option value="XL">XL</option>
-                         <option value="XXL">XXL</option>
-                     </select>
-            </div>
-            <div id="Description"></div>
-            <div id="Prix"></div>
-       
-            <div id="Image"></div>
         </div>
+
     </div>
 </body>
 

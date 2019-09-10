@@ -3,44 +3,8 @@
   width: 100vw;
   background-image: url("images/ajoutpizza.jpg");
   justify-content: cover;
-  background-size: 100vw;
-}
-#body{
-    width: 100vw;
-    height: 80vh;
-    display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-content: center;
-}
-#Gcadre {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-content: center;
-  width: 80vw;
-  height: 80vh;
-  background-color: grey;
-  opacity: 0.5;
-}
-#Nom {
-  color: white;
-}
-
-#Taille {
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  width: 80vw;
-  height: 80vh;
-}
-select {
-  width: 4vw;
-  height: 4vh;
-  margin-top: 0.5vh;
-}
-p {
-  color: white;
+ 
+  
 }
 
 #formulaire {
