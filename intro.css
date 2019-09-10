@@ -13,7 +13,13 @@ div {
     border: 1px solid red;
 }
 
+@font-face {
+    font-family: myFirstFont;
+    src: url(sansation_light.woff);
+  }
+
 #mainbox {
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -48,6 +54,46 @@ div {
     background-repeat: no-repeat;
 }
 
+#punchline_01 {
+    position: absolute;
+    top: 10%;
+    left: 5%;
+    width: 15%;
+    height: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 2rem;
+    background-color: #eccb78;
+}
+
+#punchline_02 {
+    position: absolute;
+    top: 10%;
+    left: 80%;
+    width: 15%;
+    height: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 2rem;
+    background-color: #eccb78;
+}
+
+#slogan_01 {
+    color: #DB4213;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+#slogan_02 {
+    color: #DB4213;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
 .headmove {
     animation-name: headmove;
     animation-duration: 1s;
@@ -67,19 +113,20 @@ div {
 }
 
 .swing {
-    transform-origin: top center;
     animation-name: swing;
     animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
     animation-fill-mode: both;
+    transform-origin: top center;
 }
 
 @keyframes headmove {
     0%   {transform: rotate(0deg);}
-    25%  {transform: rotate(8deg);}
+    25%  {transform: rotate(5deg);}
     50%  {transform: rotate(0deg);}
-    75%  {transform: rotate(-8deg);}
+    75%  {transform: rotate(-5deg);}
     100% {transform: rotate(0deg);}
-
 }
 
 @keyframes platemove {
@@ -88,47 +135,10 @@ div {
     100% {transform: rotate(0deg);}
 }
 
-    @-webkit-keyframes swing {
-    20% {
-    -webkit-transform: rotate3d(0, 0, 1, 15deg);
-    transform: rotate3d(0, 0, 1, 15deg);
-    }
-    40% {
-    -webkit-transform: rotate3d(0, 0, 1, -10deg);
-    transform: rotate3d(0, 0, 1, -10deg);
-    }
-    60% {
-    -webkit-transform: rotate3d(0, 0, 1, 5deg);
-    transform: rotate3d(0, 0, 1, 5deg);
-    }
-    80% {
-    -webkit-transform: rotate3d(0, 0, 1, -5deg);
-    transform: rotate3d(0, 0, 1, -5deg);
-    }
-    100% {
-    -webkit-transform: rotate3d(0, 0, 1, 0deg);
-    transform: rotate3d(0, 0, 1, 0deg);
-    }
-    }
-    @keyframes swing {
-    20% {
-    -webkit-transform: rotate3d(0, 0, 1, 15deg);
-    transform: rotate3d(0, 0, 1, 15deg);
-    }
-    40% {
-    -webkit-transform: rotate3d(0, 0, 1, -10deg);
-    transform: rotate3d(0, 0, 1, -10deg);
-    }
-    60% {
-    -webkit-transform: rotate3d(0, 0, 1, 5deg);
-    transform: rotate3d(0, 0, 1, 5deg);
-    }
-    80% {
-    -webkit-transform: rotate3d(0, 0, 1, -5deg);
-    transform: rotate3d(0, 0, 1, -5deg);
-    }
-    100% {
-    -webkit-transform: rotate3d(0, 0, 1, 0deg);
-    transform: rotate3d(0, 0, 1, 0deg);
-    }
-    }
+@keyframes swing {
+    20% {transform: rotate3d(0, 0, 1, 15deg);}
+    40% {transform: rotate3d(0, 0, 1, -10deg);}
+    60% {transform: rotate3d(0, 0, 1, 5deg);}
+    80% {transform: rotate3d(0, 0, 1, -5deg);}
+    100% {transform: rotate3d(0, 0, 1, 0deg);}
+}
