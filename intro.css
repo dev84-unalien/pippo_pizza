@@ -6,11 +6,7 @@ html, body {
     background-color: #ffffff;
     color: #000000;
     font-family: 'beautifulRosesRegular';
-    font-size: 16px;
-}
-
-div, span {
-    border: 1px solid red;
+    font-size: 11px;
 }
 
 @font-face {
@@ -28,6 +24,14 @@ div, span {
     overflow: hidden;
     width: 100vw;
     height: 100vh;
+}
+
+#pizzagirl {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
 }
 
 #pippo {
