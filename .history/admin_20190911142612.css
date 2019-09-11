@@ -1,10 +1,13 @@
-body {
-  height: 100vh;
+#body {
   width: 100vw;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
   background-image: url("images/ajoutpizza.jpg");
-  justify-content: cover;
-  background-size: 100vw;
 }
+
 #gcadre {
   display: flex;
   flex-direction: column;
@@ -72,7 +75,7 @@ select {
   margin-left:2vw; 
 }
 
-#image {
+#Image {
   margin-left: 2vw;
 }
 

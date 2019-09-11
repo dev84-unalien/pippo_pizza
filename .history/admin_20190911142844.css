@@ -5,6 +5,8 @@ body {
   justify-content: cover;
   background-size: 100vw;
 }
+
+
 #gcadre {
   display: flex;
   flex-direction: column;
@@ -72,7 +74,7 @@ select {
   margin-left:2vw; 
 }
 
-#image {
+#Image {
   margin-left: 2vw;
 }
 
