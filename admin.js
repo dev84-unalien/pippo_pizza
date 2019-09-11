@@ -8,20 +8,14 @@ $(document).ready(function() {
     let image_url_piz = '';
     let ausweis = null;
     
-        $('#validate').click(function() {
+        $('#validate1').click(function() {
 
             ausweis = 0;
-            superficie = $('#superficie').val();
-            literie = $('#literie').val();
-            equipement = $('#equipement').val();
-            fumeur = $('#fumeur').val();
-            parking = $('#parking').val();
-            vue = $('#vue').val();
-            bain = $('#bain').val();
-            descriptif = $('#descriptif').val();
-            photo = $('#photo').val();
-            tarif = $('#tarif').val();
-            dispo = $('#dispo').val();
+            nom_piz = $('#ecriture').val();
+            taille_piz = $('#taillepizza').val();
+            description_piz = $('#desctext').val();
+            prix_piz = $('#prix1').val();
+            image_url_piz = $('#imgpizza').val();
 
             if (superficie == '') {$('#superficie').addClass('badentry'); ausweis = 0;}
                 else {ausweis++; $('#superficie').removeClass('badentry');}
