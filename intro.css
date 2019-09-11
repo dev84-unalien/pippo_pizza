@@ -6,11 +6,7 @@ html, body {
     background-color: #ffffff;
     color: #000000;
     font-family: 'beautifulRosesRegular';
-    font-size: 16px;
-}
-
-div, span {
-    border: 1px solid red;
+    font-size: 11px;
 }
 
 @font-face {
@@ -28,6 +24,14 @@ div, span {
     overflow: hidden;
     width: 100vw;
     height: 100vh;
+}
+
+#pizzagirl {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
 }
 
 #pippo {
@@ -144,7 +148,7 @@ div, span {
 }
 
 #slogan_04 {
-    width: 60%;
+    width: 50%;
     color: #DB4213;
     font-size: 2rem;
     font-weight: bold;
@@ -163,9 +167,20 @@ div, span {
 }
 
 #legend_04 {
-    width: 30%;
+    width: 40%;
     color: #DB4213;
     font-size: 1.4rem;
+}
+
+#pizzahand {
+    position: absolute;
+    top: 43%;
+    left: 5%;
+    width: 15%;
+    height: 60%;
+    background-image: url('images/main_&_pizza.png');
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .headmove {
@@ -195,6 +210,14 @@ div, span {
     transform-origin: top center;
 }
 
+.wobble {
+    animation-name: wobble;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-fill-mode: both;
+}
+
 @keyframes headmove {
     0%   {transform: rotate(0deg);}
     25%  {transform: rotate(5deg);}
@@ -215,4 +238,14 @@ div, span {
     60% {transform: rotate3d(0, 0, 1, 5deg);}
     80% {transform: rotate3d(0, 0, 1, -5deg);}
     100% {transform: rotate3d(0, 0, 1, 0deg);}
+}
+
+@keyframes wobble {
+    0%   {transform: none;}
+    15%  {transform: translate3d(-25%, 0, 0) rotate3d(0, 0, 1, -5deg);}
+    30%  {transform: translate3d(20%, 0, 0) rotate3d(0, 0, 1, 3deg);}
+    45%  {transform: translate3d(-15%, 0, 0) rotate3d(0, 0, 1, -3deg);}
+    60%  {transform: translate3d(10%, 0, 0) rotate3d(0, 0, 1, 2deg);}
+    75%  {transform: translate3d(-5%, 0, 0) rotate3d(0, 0, 1, -1deg);}
+    100% {transform: none;}
 }
