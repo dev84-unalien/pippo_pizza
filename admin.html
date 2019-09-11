@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>pizzaria pippo</title>
+    <title>pizzeria pippo</title>
     <link rel="stylesheet" href="admin.css">
     <script src="jquery-3.4.1.min.js"></script>
     <script src="admin.js"></script>
@@ -13,12 +13,11 @@
 </head>
 
 <body>
-    <div id=unos>
-        <div id=commande>
+    <div id="unos">
+        <div id="commande">
 
             <h2>Tabs</h2>
            
-
             <div class="tab">
                 <button class="tablinks" onclick="openCity(event, 'livraison')">livraison</button>
                 <button class="tablinks" onclick="openCity(event, 'emporter')">a emporter</button>
@@ -39,12 +38,12 @@
             </form>
 
          <div id="body">
-            <div id="Gcadre">
+            <div id="gcadre">
                 <h1>Création d'une nouvelle pizza :</h1>
-                 <div id="Nom">Nom de la pizza:<input id="écriture"></input></div>
-                  <div id="Taille">
+                 <div id="nom">Nom de la pizza:<input id="ecriture"></input></div>
+                  <div id="taille">
                   <p>Sélectionner la taille de la pizza :</p>
-                   <select >
+                   <select id = "taillepizza">
                          <option value="S">S</option>
                          <option value="M">M</option>
                          <option value=">L">L</option>
@@ -52,16 +51,16 @@
                          <option value="XXL">XXL</option>
                      </select>
                 </div>
-                <div id="Description">Description :<TEXTAREA name="desc" rows=4 cols=40></TEXTAREA></div>
-                <div id="Prix">Prix de la pizza : <input id="prix1"></input></div>
+                <div id="description">Description :<TEXTAREA id ="desctext" name="desc" rows=4 cols=40></TEXTAREA></div>
+                <div id="prix">Prix de la pizza : <input id="prix1"></input></div>
            
-                <div id="Image"> Photo de la pizza (url) :<input id="imgpizza"></input></div>
+                <div id="image"> Photo de la pizza (url) :<input id="imgpizza"></input></div>
             </div>
            
-            <div id="Gcadre2">
+            <div id="gcadre2">
                 <h1>Fidélité :</h1>
                 <div id="seuil">Nombre de pizzas pour obtenir la réduction :<input id="nbrpizza" type="text"></div>
-                <div id="réduction"> Taux de réduction sur la prochaine pizza :<input id="pourcentage" type="text"></div>
+                <div id="reduction"> Taux de réduction sur la prochaine pizza :<input id="pourcentage" type="text"></div>
             </div>
         </div>
     </div>

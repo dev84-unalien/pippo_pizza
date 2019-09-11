@@ -6,6 +6,8 @@ $(document).ready(function() {
     let description_piz = '';
     let prix_piz = 0.0;
     let image_url_piz = '';
+    let seuil_fidelite = 0;
+    let pourcent_reduction = 0;
     let ausweis = null;
     
         $('#validate1').click(function() {
@@ -17,66 +19,80 @@ $(document).ready(function() {
             prix_piz = $('#prix1').val();
             image_url_piz = $('#imgpizza').val();
 
-            if (superficie == '') {$('#superficie').addClass('badentry'); ausweis = 0;}
-                else {ausweis++; $('#superficie').removeClass('badentry');}
+            if (nom_piz == '') {$('#ecriture').addClass('badentry'); ausweis = 0;}
+                else {ausweis++; $('#ecriture').removeClass('badentry');}
             
-            if (literie == '') {$('#literie').addClass('badentry'); ausweis = 0;}
-                else {ausweis++; $('#literie').removeClass('badentry');}
+            if (taille_piz == '') {$('#taillepizza').addClass('badentry'); ausweis = 0;}
+                else {ausweis++; $('#taillepizza').removeClass('badentry');}
             
-            if (equipement == '') {$('#equipement').addClass('badentry'); ausweis = 0;}
-                else {ausweis++; $('#equipement').removeClass('badentry');}
+            if (description_piz == '') {$('#desctext').addClass('badentry'); ausweis = 0;}
+                else {ausweis++; $('#desctext').removeClass('badentry');}
 
-            if (fumeur == '') {$('#fumeur').addClass('badentry'); ausweis = 0;}
-                else {ausweis++; $('#fumeur').removeClass('badentry');}
+            if (prix_piz == '') {$('#prix1').addClass('badentry'); ausweis = 0;}
+                else {ausweis++; $('#prix1').removeClass('badentry');}
 
-            if (parking == '') {$('#parking').addClass('badentry'); ausweis = 0;}
-                else {ausweis++; $('#parking').removeClass('badentry');}
+            if (image_url_piz == '') {$('#imgpizza').addClass('badentry'); ausweis = 0;}
+                else {ausweis++; $('#imgpizza').removeClass('badentry');}
 
-            if (vue == '') {$('#vue').addClass('badentry'); ausweis = 0;}
-                else {ausweis++; $('#vue').removeClass('badentry');}
-
-            if (bain == '') {$('#bain').addClass('badentry'); ausweis = 0;}
-                else {ausweis++; $('#bain').removeClass('badentry');}
-
-            if (descriptif == '') {$('#descriptif').addClass('badentry'); ausweis = 0;}
-                else {ausweis++; $('#descriptif').removeClass('badentry');}
-
-            if (photo == '') {$('#photo').addClass('badentry'); ausweis = 0;}
-                else {ausweis++; $('#photo').removeClass('badentry');}
-
-            if (tarif == '') {$('#tarif').addClass('badentry'); ausweis = 0;}
-                else {ausweis++; $('#tarif').removeClass('badentry');}
-
-            if (dispo == '') {$('#dispo').addClass('badentry'); ausweis = 0;}
-                else {ausweis++; $('#dispo').removeClass('badentry');}
-
-            if (ausweis == 11) {
-                cifammoniacal(superficie, literie, equipement, fumeur, parking, vue, bain, descriptif, photo, tarif, dispo);
+            if (ausweis == 5) {
+                addpizza(nom_piz, taille_piz, description_piz, prix_piz, image_url_piz);
             }
                 else {alert("Formulaire invalide, wtf, call the police!");}
         });
 
-        function cifammoniacal(cifsup, ciflit, cifequ, ciffum, cifpar, cifvue, cifbai, cifdes, cifpho, ciftar, cifdis) {
+        function addpizza(nom, taille, descri, prix, image) {
 
-            console.log(cifsup);
-            console.log(ciflit);
-            console.log(cifequ);
-            console.log(ciffum);
-            console.log(cifpar);
-            console.log(cifvue);
-            console.log(cifbai);
-            console.log(cifdes);
-            console.log(cifpho);
-            console.log(ciftar);
-            console.log(cifdis);
+            console.log(nom);
+            console.log(taille);
+            console.log(descri);
+            console.log(prix);
+            console.log(image);
 
             $.ajax({
-                url: "http://localhost/create_rooms.php",
+                url: "http://localhost/modifypizza.php",
                 type: 'POST',
-                data: {bcksup: cifsup, bcklit: ciflit, bckequ: cifequ, bckfum: ciffum, bckpar: cifpar, bckvue: cifvue, bckbai: cifbai, bckdes: cifdes, bckpho: cifpho, bcktar: ciftar, bckdis: cifdis},
+                data: {bcknom: nom, bcktaille: taille, bckdescri: descri, bckprix: prix, bckimage: image},
                 success: myHandler,
                 error: function () {
-                    alert("Something's rotten in the Kingdom... Impossible de créer la chambre...");
+                    alert("Something's rotten in the Kingdom... Impossible de créer la pizza...");
+                }
+            });
+
+            function myHandler (result) {
+                alert(result);
+            }
+        }
+
+        $('#validate2').click(function() {
+
+            ausweis = 0;
+            seuil_fidelite = $('#nbrpizza').val();
+            pourcent_reduction = $('#pourcentage').val();
+
+            if (seuil_fidelite == '') {$('#nbrpizza').addClass('badentry'); ausweis = 0;}
+                else {ausweis++; $('#nbrpizza').removeClass('badentry');}
+            
+            if (pourcent_reduction == '') {$('#pourcentage').addClass('badentry'); ausweis = 0;}
+                else {ausweis++; $('#pourcentage').removeClass('badentry');}
+
+            if (ausweis == 2) {
+                changeconfig(seuil_fidelite, pourcent_reduction);
+            }
+                else {alert("Formulaire invalide, wtf, call fbi!");}
+        });
+
+        function changeconfig(seuilfidelite, pourcentreduction) {
+
+            console.log(seuilfidelite);
+            console.log(pourcentreduction);
+            
+            $.ajax({
+                url: "http://localhost/setreductionseuil.php",
+                type: 'POST',
+                data: {bckseuil: seuilfidelite, bckpourc: pourcentreduction},
+                success: myHandler,
+                error: function () {
+                    alert("Something's rotten in the Kingdom... Impossible de modifier la configuration...");
                 }
             });
 
