@@ -103,20 +103,6 @@ p {
   margin-top:1vh;
   color: white;
 }
-#nbrpizza{
-  margin-left: 3vw;
-  width: 5vw;
-}
-#seuil{
-  margin-left: 2vw;
-}
-#réduction{
-  margin-left: 2vw;
-}
-#pourcentage{
-  margin-left: 2vw;
-  width: 7vw;
-}
 
 #formulaire {
   height: 50%;

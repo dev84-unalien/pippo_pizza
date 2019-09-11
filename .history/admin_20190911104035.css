@@ -96,26 +96,12 @@ p {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  width: 80vw;
+  width: 40vw;
   height: 40vh;
   background-color: rgba(216, 166, 166, 0.5);
   margin-left: 9vw;
   margin-top:1vh;
   color: white;
-}
-#nbrpizza{
-  margin-left: 3vw;
-  width: 5vw;
-}
-#seuil{
-  margin-left: 2vw;
-}
-#réduction{
-  margin-left: 2vw;
-}
-#pourcentage{
-  margin-left: 2vw;
-  width: 7vw;
 }
 
 #formulaire {

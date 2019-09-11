@@ -22,7 +22,7 @@
   height: 80vh;
   background-color: rgba(216, 166, 166, 0.5);
   margin-left: 9vw;
-  margin-top:1vh;
+  margin-top:9vh;
   color: white;
 }
 
@@ -30,7 +30,7 @@
   margin-left: 9vw;
   display: flex;
   color: white;
-  margin-top: 1vw;
+  margin-top: 8vw;
   width: 30vw;
   height:2vh;
 }
@@ -52,7 +52,7 @@ select {
   width: 4vw;
   height: 4vh;
   margin-top: 0.5vh;
-  
+  margin-left: 18vw;
 }
 
 #Description{
@@ -65,21 +65,18 @@ select {
 }
 #Prix{
   width: 20vw;
-  height: 4vh;
-  margin-right:1vw;
-  margin-left: vw;
+  height: 4vw;
 
 }
 #prix1{
-  margin-left:6vw; 
- 
+  margin-left:3vw; 
 }
 #imgpizza{
 width: 13vw;
-margin-left:2vw; 
+margin-left:1vw; 
 }
 #Image{
-  margin-left: 2vw;
+  margin-left: 3vw;
 }
 TEXTAREA{
   margin-left:1vw; 
@@ -87,35 +84,6 @@ TEXTAREA{
 }
 p {
   color: white;
-  margin-left: 8vw;
-  margin-right: 8vw;
-}
-
-#Gcadre2 {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-  width: 80vw;
-  height: 40vh;
-  background-color: rgba(216, 166, 166, 0.5);
-  margin-left: 9vw;
-  margin-top:1vh;
-  color: white;
-}
-#nbrpizza{
-  margin-left: 3vw;
-  width: 5vw;
-}
-#seuil{
-  margin-left: 2vw;
-}
-#réduction{
-  margin-left: 2vw;
-}
-#pourcentage{
-  margin-left: 2vw;
-  width: 7vw;
 }
 
 #formulaire {
