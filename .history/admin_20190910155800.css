@@ -1,0 +1,138 @@
+#unos {
+  height: 100vh;
+  width: 100vw;
+  background-image: url("images/ajoutpizza.jpg");
+  justify-content: cover;
+  background-size: 100vw;
+}
+#body{
+    width: 100vw;
+    height: 80vh;
+    display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+#Gcadre {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 80vw;
+  height: 80vh;
+  background-color: rgba(216, 166, 166, 0.5);
+  margin-left: 9vw;
+  margin-top:9vh;
+  color: white;
+}
+
+#Nom {
+  margin-left: 10vw;
+  display: flex;
+  color: white;
+  margin-top: 8vw;
+  width: 30vw;
+  height:2vh;
+}
+#écriture{
+  width:15vw;
+  height:2vh;
+}
+
+#Taille {
+  margin-right: 5vw;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  width: 80vw;
+  height: 5vh;
+}
+select {
+  width: 4vw;
+  height: 4vh;
+  margin-top: 0.5vh;
+}
+
+#Description{
+  margin-left: 2vw;
+  size: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+#Prix{
+  width: 20vw;
+  height: 4vw;
+
+}
+#imgpizza{
+width: 15vw;
+}
+#Image{
+  margin-left: 3vw;
+}
+TEXTAREA{
+  margin-left:10vw; 
+
+}
+p {
+  color: white;
+}
+
+#formulaire {
+  height: 50%;
+  width: 50%;
+  background-color: aliceblue;
+}
+
+#livraison {
+  background-color: aquamarine;
+}
+
+#emporter {
+  background-color: beige;
+}
+#contact {
+  background-color: powderblue;
+}
+
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+/* Style the buttons inside the tab */
+
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+
+.tab button:hover {
+  background-color: red;
+}
+
+/* Create an active/current tablink class */
+
+.tab button.active {
+  background-color: red;
+}
+
+/* Style the tab content */
+
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid red;
+  border-top: none;
+}
