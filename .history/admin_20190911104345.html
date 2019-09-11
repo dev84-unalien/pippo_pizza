@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>pizzaria pippo</title>
+    <link rel="stylesheet" href="admin.css">
+    <script src="jquery-3.4.1.min.js"></script>
+    <script src="admin.js"></script>
+
+</head>
+
+<body>
+    <div id=unos>
+        <div id=commande>
+
+            <h2>Tabs</h2>
+           
+
+            <div class="tab">
+                <button class="tablinks" onclick="openCity(event, 'livraison')">livraison</button>
+                <button class="tablinks" onclick="openCity(event, 'emporter')">a emporter</button>
+                <button class="tablinks" onclick="openCity(event, 'contact')">contact</button>
+            </div>
+
+            <div id="livraison" class="tabcontent">
+                <h3>livraison</h3>
+            </div>
+
+            <div id="emporter" class="tabcontent">
+                <h3>emporter</h3>
+               
+            </div>
+
+            <div id="contact" class="tabcontent">
+            </div>
+            </form>
+
+         <div id="body">
+            <div id="Gcadre">
+                <h1>Création d'une nouvelle pizza :</h1>
+                 <div id="Nom">Nom de la pizza:<input id="écriture"></input></div>
+                  <div id="Taille">
+                  <p>Sélectionner la taille de la pizza :</p>
+                   <select >
+                         <option value="S">S</option>
+                         <option value="M">M</option>
+                         <option value=">L">L</option>
+                         <option value="XL">XL</option>
+                         <option value="XXL">XXL</option>
+                     </select>
+                </div>
+                <div id="Description">Description :<TEXTAREA name="desc" rows=4 cols=40></TEXTAREA></div>
+                <div id="Prix">Prix de la pizza: <input id="prix1"></input></div>
+           
+                <div id="Image"> Photo de la pizza (url) :<input id="imgpizza"></input></div>
+            </div>
+           
+            <div id="Gcadre2">
+                <div id="seuil"><input id="nbrpizza" type="text"></div>
+                <div id="réduction"><input id="pourcentage" type="text"></div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
