@@ -19,20 +19,4 @@ body {
     margin-top:1vh;
     color: white;
   }
-  .section{
-      display: flex;
-      justify-content: space-between;
-      width: 20vw;
-  }
-  #validatecommande{
-      border-radius: 5vw;
-      width:10vw;
-      height: 4vh;
-      color:green;
-      background-color:rgb(9, 255, 9);
-      cursor: pointer;
-  }
-  .badentry{
-    border:1px dotted red;
-  }
   
