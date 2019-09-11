@@ -5,19 +5,6 @@ body {
   justify-content: cover;
   background-size: 100vw;
 }
-<<<<<<< HEAD
-
-#body {
-  width: 100vw;
-  height: 80vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-content: center;
-}
-
-=======
->>>>>>> 4dc8abd25f61953015e3a97130362acbc477bc48
 #gcadre {
   display: flex;
   flex-direction: column;
@@ -85,11 +72,7 @@ select {
   margin-left:2vw; 
 }
 
-<<<<<<< HEAD
-#Image {
-=======
 #image {
->>>>>>> 4dc8abd25f61953015e3a97130362acbc477bc48
   margin-left: 2vw;
 }
 
@@ -133,65 +116,6 @@ p {
   margin-left: 2vw;
   width: 7vw;
 }
-<<<<<<< HEAD
-
-#formulaire {
-  height: 50%;
-  width: 50%;
-  background-color: aliceblue;
-}
-
-#livraison {
-  background-color: aquamarine;
-}
-
-#emporter {
-  background-color: beige;
-}
-#contact {
-  background-color: powderblue;
-}
-
-.tab {
-  overflow: hidden;
-  border: 1px solid #ccc;
-  background-color: #f1f1f1;
-}
-
-/* Style the buttons inside the tab */
-
-.tab button {
-  background-color: inherit;
-  float: left;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  padding: 14px 16px;
-  transition: 0.3s;
-  font-size: 17px;
-}
-
-/* Change background color of buttons on hover */
-
-.tab button:hover {
-  background-color: red;
-}
-
-/* Create an active/current tablink class */
-
-.tab button.active {
-  background-color: red;
-}
-
-/* Style the tab content */
-
-.tabcontent {
-  display: none;
-  padding: 6px 12px;
-  border: 1px solid red;
-  border-top: none;
-=======
 .badentry{
   border:1px dotted red;
->>>>>>> 4dc8abd25f61953015e3a97130362acbc477bc48
 }

@@ -1,5 +1,7 @@
 <?php
-header("Content-type: text/html; charset=UTF-8");
+header("Access-Control-Allow-Origin: *"); // Correction erreur CORS
+
+header("Content-type: text/html; charset=UTF-8"); // Forçage du charset UTF-8
 
 // Récupération des données de la requête AJAX du formulaire de 'admin.html'
 
