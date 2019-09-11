@@ -1,0 +1,121 @@
+body {
+  height: 100vh;
+  width: 100vw;
+  background-image: url("images/ajoutpizza.jpg");
+  justify-content: cover;
+  background-size: 100vw;
+}
+#gcadre {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 80vw;
+  height: 80vh;
+  background-color: rgba(216, 166, 166, 0.5);
+  margin-left: 9vw;
+  margin-top:1vh;
+  color: white;
+}
+
+#nom {
+  margin-left: 9vw;
+  display: flex;
+  color: white;
+  margin-top: 1vw;
+  width: 30vw;
+  height:2vh;
+}
+
+#ecriture {
+  width:16vw;
+  height:2vh;
+  margin-left:1vw; 
+}
+
+#taille {
+  margin-right: 6vw;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  width: 80vw;
+  height: 5vh;
+}
+
+select {
+  width: 4vw;
+  height: 4vh;
+  margin-top: 0.5vh;  
+}
+
+#description {
+  margin-left: 2vw;
+  size: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#prix {
+  width: 20vw;
+  height: 4vh;
+  margin-right:1vw;
+  margin-left: vw;
+}
+
+#prix1 {
+  margin-left:6vw; 
+}
+
+#imgpizza {
+  width: 13vw;
+  margin-left:2vw; 
+}
+
+#image {
+  margin-left: 2vw;
+}
+
+TEXTAREA {
+  margin-left:1vw; 
+}
+
+p {
+  color: white;
+  margin-left: 8vw;
+  margin-right: 8vw;
+}
+
+#gcadre2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 80vw;
+  height: 40vh;
+  background-color: rgba(216, 166, 166, 0.5);
+  margin-left: 9vw;
+  margin-top:1vh;
+  color: white;
+}
+
+#nbrpizza {
+  margin-left: 3vw;
+  width: 5vw;
+}
+
+#seuil {
+  margin-left: 2vw;
+}
+
+#reduction {
+  margin-left: 2vw;
+}
+
+#pourcentage {
+  margin-left: 2vw;
+  width: 7vw;
+}
+.badentry{
+  border:1px dotted red;
+}

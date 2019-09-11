@@ -1,0 +1,19 @@
+body {
+    height: 100vh;
+    width: 100vw;
+    background-image: url("images/ajoutpizza.jpg");
+    justify-content: cover;
+    background-size: 100vw;
+  }
+  #gcadre {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 80vw;
+    height: 80vh;
+    background-color: rgba(216, 166, 166, 0.5);
+    margin-left: 9vw;
+    margin-top:1vh;
+    color: white;
+  }

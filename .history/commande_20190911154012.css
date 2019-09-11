@@ -1,0 +1,25 @@
+body {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    background-image: url("images/ajoutpizza.jpg");
+    justify-content: cover;
+    align-items: center;
+    background-size: 100vw;
+  }
+  #cadrecommande {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 80vw;
+    height: 80vh;
+    background-color: rgba(120, 139, 204, 0.685);
+    margin-left: 9vw;
+    margin-top:1vh;
+    color: white;
+  }
+  #cadrecommande{
+      width: 50vw;
+      height: 70vh;
+  }
