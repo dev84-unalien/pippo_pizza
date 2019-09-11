@@ -1,0 +1,82 @@
+html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: "roses";
+    src: url("font/billionaire_2/BillionaireMediumGrunge.ttf");
+    font-weight: bold;
+}
+
+#unos {
+    height: 100vh;
+    width: 100vw;
+}
+
+#titre {
+    width: 20%;
+    height: 10%;
+    position: relative;
+    margin-top: 0%;
+    margin-left: 42%;
+}
+
+#teti {
+    font-family: "roses", sans-serif;
+    font-size: 4.5em;
+    color: rgba(0, 128, 0, 0.795);
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    background-image: url(images/four9.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#A {
+    background-color: black;
+    width: 100vw;
+    height: 12vh;
+    margin-top: 5vh;
+}
+
+#AA {
+    background-color: red;
+    width: 100vw;
+    height: 12vh;
+    margin-top: 5vh;
+}
+
+#AAA {
+    background-color: green;
+    width: 100vw;
+    height: 12vh;
+    margin-top: 5vh;
+}
+
+#AAAA {
+    background-color: beige;
+    width: 100vw;
+    height: 12vh;
+    margin-top: 5vh;
+}
+
+#AAAAA {
+    background-color: yellow;
+    width: 100vw;
+    height: 12vh;
+    margin-top: 5vh;
+}
+
+.image {
+    width: 30%;
+    height: 30%;
+    background-color: brown;
+    margin-left: 30%;
+}
