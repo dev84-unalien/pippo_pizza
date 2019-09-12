@@ -29,10 +29,6 @@ body {
       width:10vw;
       height: 4vh;
       color:green;
-      background-color:rgb(9, 255, 9);
-      cursor: pointer;
-  }
-  .badentry{
-    border:1px dotted red;
+      background-color:pink;
   }
   

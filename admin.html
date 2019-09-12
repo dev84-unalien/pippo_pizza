@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+
+<html lang="fr-FR">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>pizzeria pippo</title>
+    <title>Pizzeria Pippo</title>
     <link rel="stylesheet" href="admin.css">
     <script src="jquery-3.4.1.min.js"></script>
     <script src="admin.js"></script>
@@ -13,6 +14,7 @@
 </head>
 
 <body>
+
     <input type="button" value="acceuil" onclick="document.location.href='accueil.html';">
     <div id="body">
         <div id="gcadre">
@@ -24,29 +26,32 @@
                 <select id="taillepizza">
                          <option value="S">S</option>
                          <option value="M">M</option>
-                         <option value=">L">L</option>
+                         <option value="L">L</option>
                          <option value="XL">XL</option>
                          <option value="XXL">XXL</option>
                      </select>
+
             </div>
             <div id="description">Description :
-                <TEXTAREA id="desctext" name="desc" rows=4 cols=40></TEXTAREA>
+                <TEXTAREA id="desctext" name="desc" rows="4" cols="40" required></TEXTAREA>
             </div>
-            <div id="prix">Prix de la pizza : <input id="prix1"></input>
+            <div id="prix">Prix de la pizza : <input id="prix1" type="number" name="prix" maxlength="5" required></input>
             </div>
-
-            <div id="image"> Photo de la pizza (url) :<input id="imgpizza"></input>
+            <div id="image">Photo de la pizza (url) :<input id="imgpizza" type="url" name="urlpizz" maxlength="255" placeholder="url photo pizza" required></input>
             </div>
             <button id="validate1">Valider</button>
         </div>
 
         <div id="gcadre2">
             <h1>Fidélité :</h1>
-            <div id="seuil">Nombre de pizzas pour obtenir la réduction :<input id="nbrpizza" type="text"></div>
-            <div id="reduction"> Taux de réduction sur la prochaine pizza :<input id="pourcentage" type="text"></div>
+            <div id="seuil">Nombre de pizzas pour obtenir la réduction :<input id="nbrpizza" type="number" name="seupiz" min="1" max="999" maxlength="3" required></div>
+            <div id="reduction"> Taux de réduction sur la prochaine pizza :<input id="pourcentage" type="number" name="redupizz" min="1" max="99" maxlength="2" required></div>
             <button id="validate2">Valider</button>
-
         </div>
+        <button id="validate1">Valider</button>
+    </div>
+
+
     </div>
 
 </body>

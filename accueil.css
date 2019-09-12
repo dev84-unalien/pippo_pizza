@@ -133,5 +133,5 @@ body {
 }
 
 input {
-    background-image: src(images/italie.jpg)
+    background-image: url(images/italie.jpg)
 }
