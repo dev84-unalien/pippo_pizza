@@ -1,6 +1,5 @@
 $(document).ready(function() {
 
-    let id_piz = null;
     let nom_piz = '';
     let taille_piz = '';
     let description_piz = '';

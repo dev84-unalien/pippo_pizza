@@ -1,4 +1,5 @@
 <?php
+
 header("Access-Control-Allow-Origin: *"); // Correction erreur CORS
 
 header("Content-type: text/html; charset=UTF-8"); // Forçage du charset UTF-8
@@ -43,7 +44,7 @@ $connex->query("SET NAMES utf8");
 
 // Préparation de la requête SQL
 
-$requete = $connex->prepare("INSERT INTO configuration (seuil_fidelite, pourcent_reduction) VALUES (?, ?");
+$requete = $connex->prepare("UPDATE configuration SET seuil_fidelite = ?, pourcent_reduction = ?");
 
 // Renseignement des valeurs dynamiques de la requête
 

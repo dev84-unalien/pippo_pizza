@@ -1,4 +1,5 @@
 <?php
+
 header("Access-Control-Allow-Origin: *"); // Correction erreur CORS
 
 header("Content-type: text/html; charset=UTF-8"); // Forçage du charset UTF-8
@@ -56,7 +57,7 @@ $connex->query("SET NAMES utf8");
 
 // Préparation de la requête SQL
 
-$requete = $connex->prepare("INSERT INTO pizza (nom, taille, description, prix, image_url) VALUES (?, ?, ?, ?, ?");
+$requete = $connex->prepare("INSERT INTO pizza (nom, taille, description, prix, image_url) VALUES (?, ?, ?, ?, ?)");
 
 // Renseignement des valeurs dynamiques de la requête
 

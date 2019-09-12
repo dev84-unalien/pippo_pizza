@@ -5,6 +5,7 @@ body {
   justify-content: cover;
   background-size: 100vw;
 }
+
 #gcadre {
   display: flex;
   flex-direction: column;
@@ -117,5 +118,5 @@ p {
   width: 7vw;
 }
 .badentry{
-  border:1px dotted red;
+  border: 2px dotted red;
 }
