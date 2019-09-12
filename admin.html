@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,36 +13,42 @@
 </head>
 
 <body>
-
-         <div id="body">
-            <div id="gcadre">
-                <h1>Création d'une nouvelle pizza :</h1>
-                 <div id="nom">Nom de la pizza:<input id="ecriture"></input></div>
-                  <div id="taille">
-                  <p>Sélectionner la taille de la pizza :</p>
-                   <select id = "taillepizza">
+    <input type="button" value="acceuil" onclick="document.location.href='accueil.html';">
+    <div id="body">
+        <div id="gcadre">
+            <h1>Création d'une nouvelle pizza :</h1>
+            <div id="nom">Nom de la pizza:<input id="ecriture"></input>
+            </div>
+            <div id="taille">
+                <p>Sélectionner la taille de la pizza :</p>
+                <select id="taillepizza">
                          <option value="S">S</option>
                          <option value="M">M</option>
                          <option value=">L">L</option>
                          <option value="XL">XL</option>
                          <option value="XXL">XXL</option>
                      </select>
-                </div>
-                <div id="description">Description :<TEXTAREA id ="desctext" name="desc" rows=4 cols=40></TEXTAREA></div>
-                <div id="prix">Prix de la pizza : <input id="prix1"></input></div>
-           
-                <div id="image"> Photo de la pizza (url) :<input id="imgpizza"></input></div>
-                <button id="validate1">Valider</button>
             </div>
-           
-            <div id="gcadre2">
-                <h1>Fidélité :</h1>
-                <div id="seuil">Nombre de pizzas pour obtenir la réduction :<input id="nbrpizza" type="text"></div>
-                <div id="reduction"> Taux de réduction sur la prochaine pizza :<input id="pourcentage" type="text"></div>
-                <button id="validate2">Valider</button>
+            <div id="description">Description :
+                <TEXTAREA id="desctext" name="desc" rows=4 cols=40></TEXTAREA>
             </div>
+            <div id="prix">Prix de la pizza : <input id="prix1"></input>
+            </div>
+
+            <div id="image"> Photo de la pizza (url) :<input id="imgpizza"></input>
+            </div>
+            <button id="validate1">Valider</button>
         </div>
-    
+
+        <div id="gcadre2">
+            <h1>Fidélité :</h1>
+            <div id="seuil">Nombre de pizzas pour obtenir la réduction :<input id="nbrpizza" type="text"></div>
+            <div id="reduction"> Taux de réduction sur la prochaine pizza :<input id="pourcentage" type="text"></div>
+            <button id="validate2">Valider</button>
+
+        </div>
+    </div>
+
 </body>
 
 </html>

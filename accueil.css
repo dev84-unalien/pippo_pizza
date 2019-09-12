@@ -131,3 +131,7 @@ body {
 #imputa {
     margin-top: 10%;
 }
+
+input {
+    background-image: src(images/italie.jpg)
+}
